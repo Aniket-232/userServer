@@ -19,6 +19,10 @@ let Users=sequelize.define(
         "State":{
             type:DataTypes.STRING(100),
             allowNull:false
+        },
+        "repStat":{
+            type:DataTypes.INTEGER,
+            defaultValue:0
         }
     },{
         tableName:"Users",
